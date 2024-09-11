@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Responsive LogIn Form</title>
+</head>
+<body>
+    <!-- Container for the entire form and additional content -->
+    <div class="container">
+        <h2 class="heading">LogIn</h2>
+        <form id="loginForm" class="form">
+            <!-- Username or Email input field -->
+            <div class="form-group">
+                <input class="input" type="text" name="username" id="username" placeholder="Username or E-mail">
+                <div id="usernameError" class="error-message"></div>
+            </div>
+            <!-- Password input field -->
+            <div class="form-group">
+                <input class="input" type="password" name="password" id="password" placeholder="Password">
+                <div id="passwordError" class="error-message"></div>
+            </div>
+            <!-- Checkbox to show or hide password -->
+            <div class="show-password">
+                <input type="checkbox" id="showPasswordCheck">
+                <label for="showPasswordCheck">Show Password</label>
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            
+          
+            <!-- Submit button -->
+            <input class="login-button" type="submit" value="Sign In">
+            <!-- Loading spinner for API call -->
+            <div id="loadingSpinner" class="loading-spinner" style="display:none;"></div>
+        </form>
+        <!-- Social media sign-in buttons -->
+        <div class="social-account-container">
+            <span class="title">Or Sign in with</span>
+            <div class="social-accounts">
+                <button class="social-button google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button class="social-button apple">
+                    <i class="fab fa-apple"></i>
+                </button>
+                <button class="social-button twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Link to user license agreement -->
+        <span class="agreement"><a href="#">Learn user license agreement</a></span>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+/* General reset for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #22c1c3, #fdcb6e, #000000);
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    width: 28%;
+    background: #f8f9fd;
+    border-radius: 20px;
+    padding: 25px 35px;
+    border: 5px solid #fff;
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 30px 30px -20px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Heading styling */
+.heading {
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(16, 137, 211);
+    background: linear-gradient(45deg, #1089d3, #12b1d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* Form input styling */
+.form .input {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: rgba(207, 240, 255, 0.8) 0px 10px 10px -5px;
+    border: 2px solid transparent;
+}
+
+/* Placeholder styling */
+.form .input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+/* Focused input styling */
+.form .input:focus {
+    outline: none;
+    border: 2px solid #12b1d1;
+}
+
+/* Error message styling */
+.form .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Show/hide password container styling */
+.show-password, .remember-me {
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Label styling for checkboxes */
+.show-password label, .remember-me label {
+    font-size: 14px;
+    color: #0099ff;
+    margin-left: 5px;
+}
+
+/* Forgot password link styling */
+.form .forgot-password {
+    display: block;
+    margin-top: 10px;
+}
+
+.form .forgot-password a {
+    font-size: 12px;
+    color: #0099ff;
+    text-decoration: none;
+}
+
+/* Submit button styling */
+.form .login-button {
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    color: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 20px 10px -15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.form .login-button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 23px 10px -20px;
+}
+
+/* Button active effect */
+.form .login-button:active {
+    transform: scale(0.98);
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 15px 10px -10px;
+}
+
+/* Loading spinner styling */
+.loading-spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #12b1d1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+/* Keyframes for loading spinner */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Social account container styling */
+.social-account-container {
+    margin-top: 25px;
+}
+
+/* Social account title styling */
+.social-account-container .title {
+    font-size: 12px;
+    color: rgb(170, 170, 170);
+}
+
+/* Social media buttons container */
+.social-account-container .social-accounts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Social media button styling */
+.social-account-container .social-button {
+    border: 3px solid #fff;
+    background: linear-gradient(45deg, rgb(12, 220, 218) 0%, rgb(112, 112, 112) 100%);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 12px 10px -8px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Social button hover effect */
+.social-account-container .social-button:hover {
+    transform: scale(1.2);
+}
+
+/* Social button active effect */
+.social-account-container .social-button:active {
+    transform: scale(0.9);
+}
+
+/* FontAwesome icon styling */
+.social-account-container .social-button i {
+    color: white;
+    font-size: 18px;
+}
+
+/* Specific social media button colors */
+.social-account-container .social-button.google i {
+    color: #db4437;
+}
+
+.social-account-container .social-button.apple i {
+    color: #000;
+}
+
+.social-account-container .social-button.twitter i {
+    color: #1da1f2;
+}
+
+/* Agreement link styling */
+.agreement {
+    display: block;
+    margin-top: 15px;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #0099ff;
+    font-size: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+    .container {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .form .input {
+        padding: 10px 15px;
+    }
+
+    .form .login-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .social-account-container .social-button {
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+    }
+}
