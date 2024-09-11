@@ -38,7 +38,7 @@ This project demonstrates a modern and responsive login form that follows good d
   - Password field with validation and show/hide functionality.
 - **Client-Side Validation**:
   - Email field checks for empty input and correct format.
-  - Password field requires at least 6 characters.
+  The password field requires at least 6 characters.
 - **API Integration**:
   - A POST request is sent to an open API with the username/email and password.
   - Based on the response, appropriate messages (success or error) are shown.
@@ -54,10 +54,8 @@ To run this project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/login-page.git
+   git clone https://github.com/Piyush-droid996/Cdac_Web_Assignment.git
 Navigate to the Project Directory:
-bash
-Copy code
 cd login-page
 Open index.html in your browser: Simply open the index.html file in a web browser to view the login page.
 Usage
@@ -66,7 +64,7 @@ Click "Submit".
 If valid, the form sends a POST request to:
 
 https://jsonplaceholder.typicode.com/posts
-Depending on the API response, either a success or error message is displayed.
+A success or error message is displayed depending on the API response.
 Technologies Used
 HTML5: For structuring the page content.
 CSS3: For styling the form and making it responsive across devices.
