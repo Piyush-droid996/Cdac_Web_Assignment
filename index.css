@@ -18,7 +18,8 @@ body {
 
 /* Container styling */
 .container {
-    width: 28%;
+    width: 90%;
+    max-width: 400px;
     background: #f8f9fd;
     border-radius: 20px;
     padding: 25px 35px;
@@ -51,11 +52,6 @@ body {
     border: 2px solid transparent;
 }
 
-/* Placeholder styling */
-.form .input::placeholder {
-    color: rgb(170, 170, 170);
-}
-
 /* Focused input styling */
 .form .input:focus {
     outline: none;
@@ -84,18 +80,6 @@ body {
     margin-left: 5px;
 }
 
-/* Forgot password link styling */
-.form .forgot-password {
-    display: block;
-    margin-top: 10px;
-}
-
-.form .forgot-password a {
-    font-size: 12px;
-    color: #0099ff;
-    text-decoration: none;
-}
-
 /* Submit button styling */
 .form .login-button {
     width: 100%;
@@ -109,18 +93,6 @@ body {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-}
-
-/* Button hover effect */
-.form .login-button:hover {
-    transform: scale(1.05);
-    box-shadow: rgba(133, 189, 215, 0.8) 0px 23px 10px -20px;
-}
-
-/* Button active effect */
-.form .login-button:active {
-    transform: scale(0.98);
-    box-shadow: rgba(133, 189, 215, 0.8) 0px 15px 10px -10px;
 }
 
 /* Loading spinner styling */
@@ -173,60 +145,45 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-/* Social button hover effect */
-.social-account-container .social-button:hover {
-    transform: scale(1.2);
-}
-
-/* Social button active effect */
-.social-account-container .social-button:active {
-    transform: scale(0.9);
-}
-
-/* FontAwesome icon styling */
-.social-account-container .social-button i {
-    color: white;
-    font-size: 18px;
-}
-
-/* Specific social media button colors */
-.social-account-container .social-button.google i {
-    color: #db4437;
-}
-
-.social-account-container .social-button.apple i {
-    color: #000;
-}
-
-.social-account-container .social-button.twitter i {
-    color: #1da1f2;
-}
-
-/* Agreement link styling */
-.agreement {
-    display: block;
-    margin-top: 15px;
-}
-
-.agreement a {
-    text-decoration: none;
-    color: #0099ff;
-    font-size: 10px;
-}
-
 /* Responsive styling */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .container {
-        width: 60%;
+        width: 80%;
         padding: 20px;
     }
 
     .heading {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .form .input {
-        padding: 10px 15px;
+        padding: 12px 15px;
+    }
+
+    .form .login-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .social-account-container .social-button {
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .form .input {
+        padding: 10px;
     }
 
     .form .login-button {
@@ -235,8 +192,8 @@ body {
     }
 
     .social-account-container .social-button {
-        width: 35px;
-        height: 35px;
-        padding: 7px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
     }
 }
